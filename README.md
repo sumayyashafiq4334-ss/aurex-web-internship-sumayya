@@ -12,7 +12,7 @@ To learn HTML5 and GitHub commands and practice it
 - VS code
 - Git
 - GitHub
-##How to Run the Project Locally
+## How to Run the Project Locally
 - Download or clone the repository.
 - Open the project folder.
 - Open index.html in a web browser such as Google Chrome.
