@@ -1,0 +1,403 @@
+
+/* ========================================
+   GENERAL STYLING
+======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3f7;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   NAVIGATION BAR
+   NOT FIXED
+======================================== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background-color: #5b3a70;
+    padding: 16px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    padding: 8px 12px;
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #9b6bb0;
+    color: white;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    background: linear-gradient(135deg, #5b3a70, #9b6bb0);
+
+    color: white;
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   PROFILE IMAGE
+======================================== */
+
+header img,
+img {
+    display: block;
+
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    margin: 25px auto;
+
+    border-radius: 50%;
+    border: 5px solid white;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+/* ========================================
+   ALL SECTIONS
+======================================== */
+
+section {
+    background-color: white;
+
+    padding: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #5b3a70;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid #eadff0;
+}
+
+section p {
+    font-size: 16px;
+}
+
+
+/* ========================================
+   SKILLS SECTION
+======================================== */
+
+.skill-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+#Skills {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+#Skills h2 {
+    color: #5b3a70;
+    margin-bottom: 20px;
+}
+
+/* Skill boxes */
+#Skills h5 {
+    display: inline-block;
+
+    background-color: #f5f3f7;
+    color: #5b3a70;
+
+    padding: 20px;
+    margin: 10px;
+
+    border: 1px solid #e2d8e8;
+    border-radius: 10px;
+
+    min-width: 120px;
+    text-align: center;
+}
+
+
+/* ========================================
+   LISTS
+======================================== */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* ========================================
+   LINKS
+======================================== */
+
+a {
+    color: #6a4680;
+}
+
+a:hover {
+    color: #9b6bb0;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+button {
+    background-color: #5b3a70;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #9b6bb0;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    text-align: center;
+
+    background-color: #5b3a70;
+
+    color: white;
+
+    padding: 22px;
+
+    margin-top: 40px;
+
+    border-top: 4px solid #9b6bb0;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+/* ========================================
+   TABLET
+   768px AND BELOW
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+
+    /* Header */
+    header {
+        padding: 55px 20px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+
+    /* Main content */
+    main {
+        width: 92%;
+    }
+
+
+    /* Sections */
+    section {
+        padding: 25px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+
+    /* Skills become 2 columns */
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ========================================
+   MOBILE
+   480px AND BELOW
+======================================== */
+
+@media (max-width: 480px) {
+
+    /* Navigation becomes vertical */
+    nav {
+        flex-direction: column;
+        gap: 5px;
+
+        padding: 12px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* Header */
+    header {
+        padding: 45px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+
+    /* Profile image */
+    header img,
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    /* Main */
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+
+    /* Sections */
+    section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    section p {
+        font-size: 15px;
+    }
+
+    .skill-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .skill {
+        width: 100%;
+        padding: 18px;
+    }
+
+
+    /* Footer */
+    footer {
+        padding: 18px 10px;
+    }
+}
