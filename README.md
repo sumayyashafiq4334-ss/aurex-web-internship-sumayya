@@ -8,7 +8,7 @@ Sumayya Shafiq
 3
 
 ## Live Deployment :
-
+https://sumayyashafiq4334-ss.github.io/aurex-web-internship-sumayya/
 
 
 ## Task description :
