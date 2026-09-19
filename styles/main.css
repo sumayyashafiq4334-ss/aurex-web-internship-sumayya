@@ -1,0 +1,142 @@
+/* ========================================
+   WEEK 3 - ADVANCED CSS
+======================================== */
+
+/* CSS VARIABLES */
+
+:root {
+    --primary-color: #5b3a70;
+    --secondary-color: #9b6bb0;
+    --background-color: #f5f3f7;
+    --card-color: #ffffff;
+    --text-color: #333333;
+    --light-purple: #eadff0;
+    --border-radius: 12px;
+}
+
+
+/* ========================================
+   FLUID TYPOGRAPHY
+======================================== */
+
+header h1 {
+    font-size: clamp(28px, 5vw, 42px);
+}
+
+section h2 {
+    font-size: clamp(23px, 3vw, 28px);
+}
+
+
+/* ========================================
+   ADVANCED CSS GRID
+======================================== */
+
+.skill-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* ========================================
+   SKILL CARDS
+======================================== */
+
+.skill {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+
+    padding: 25px 15px;
+
+    border: 1px solid #e2d8e8;
+
+    border-radius: var(--border-radius);
+
+    text-align: center;
+
+    margin: 0;
+
+    min-width: 0;
+}
+
+
+/* ========================================
+   FLEXBOX NAVIGATION
+======================================== */
+
+nav {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+
+/* ========================================
+   FORM LAYOUT
+======================================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #d8cde0;
+
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* ========================================
+   RESPONSIVE GRID
+======================================== */
+
+@media (max-width: 768px) {
+
+    .skill-container {
+        grid-template-columns:
+            repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+    .skill-container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: clamp(26px, 8vw, 32px);
+    }
+
+}

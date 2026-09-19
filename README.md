@@ -1,11 +1,11 @@
-# Aurex Web Internship - Week 2 Submission
+# Aurex Web Internship - Week 3 Submission
 
 ## Name : 
 Sumayya Shafiq
 ## Domain :
  Front-end Web development 
 ## Week number : 
-2 
+3
 
 ## Task description :
 The task for Week 1 was to learn HTML5 and GitHub commands and practice it. And Week 2 task was to apply CSS to the page  and make it a responsive webpage.

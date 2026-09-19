@@ -1,0 +1,75 @@
+/* PAGE LOAD ANIMATION */
+
+body {
+    animation: pageFadeIn 0.8s ease-in;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* SKILL HOVER */
+
+.skill {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* PROFILE PICTURE HOVER */
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+/* SECTION HOVER */
+
+section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* SUBMIT BUTTON HOVER */
+
+button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* NAVIGATION HOVER */
+
+nav a {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+}
