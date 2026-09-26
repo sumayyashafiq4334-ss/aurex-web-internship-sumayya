@@ -22,41 +22,99 @@ Week 3 task was to focus on Advanced CSS, CSS Grid, Flexbox, CSS Animations,resp
 - VS code
 - Git
 - GitHub
+- Vanilla JavaScript
+- DOM Manipulation
+- Browser Events
+- localStorage
+- JSON
 
-## CSS Grid layouts :
-- Used CSS Grid to arrange webpage sections in a clean and organized layout.
-- Created grid-based layouts for different content sections of the webpage.
-- Used columns and rows to control the position and spacing of elements.
-- Made the grid responsive so the layout adjusts to different screen sizes.
-- Used media queries to change the layout for mobile and desktop screens.
-- Added proper spacing and alignment between grid items.
+## The Task Management Application includes the following features:
 
-## Keyframe Animations :
-- Created CSS @keyframes animations to make the webpage more interactive.
-- Added a slide/fade animation when webpage elements appear.
-- Added a hover animation to HTML5/technology elements that slightly moves them upward.
-- Added a hover effect on the profile picture that makes it slightly larger.
-- Added a hover effect on the Submit button that slightly enlarges it.
-- Added a hover effect on sections that makes them slightly lift upward.
-- Used CSS transitions along with animations to make the effects smoother.
+Add new tasks
+Edit existing tasks
+Delete tasks
+Mark tasks as completed
+Filter tasks by:
+All
+Active
+Completed
+Form validation
+Save tasks using localStorage
+Retrieve saved tasks after page refresh
+Update stored tasks
+Remove stored tasks
+Responsive interface for different screen sizes
+JavaScript Concepts Practiced
+Variables
 
-## Performance & Responsive testing outcomes across mobile and desktop devices
-The webpage was tested on both desktop and mobile screen sizes.
 
-- Desktop: The layout displays correctly with the grid sections arranged properly.
 
-- Mobile: The layout adjusts to the smaller screen size, and content remains readable without unnecessary horizontal scrolling.
+## The following JavaScript fundamentals were practiced during Week 4:
 
-- Responsive Testing: The webpage was checked using different browser screen sizes to ensure that the layout, images, text, buttons, and animations work correctly.
+Variables using let and const
+Data types and operators
+Conditional statements
+Comparison and logical operators
+for loops
+while loops
+Functions
+Parameters and arguments
+Return values
+Arrow functions
+Arrays
+Array methods
+Objects
+Template literals
+Basic destructuring
+DOM selection
+DOM manipulation
+Creating and removing elements
+Event handling
+Form validation
+preventDefault()
+localStorage
+JSON.stringify()
+JSON.parse()
+Challenges and Learning
+Challenges
 
-- Performance: The webpage loads properly and the CSS animations and layouts work smoothly without affecting normal navigation.
+## During this task, I faced challenges in:
 
-## Key learnings and difficulties/blockers encountered :
-- Learned to use CSS Grid for creating organized and responsive layouts.
-- Learned to create animations using @keyframes, transitions, and hover effects.
-- Improved my understanding of responsive design and media queries.
-- Learned how to organize CSS into separate files for better management.
-- Initially found CSS Grid and responsive layouts difficult to understand.
-- Adjusting the layout for different screen sizes required testing and changes.
-- Creating smooth animations and hover effects required some practice.
-- Testing and fixing small layout issues helped improve my CSS skills.
+Understanding JavaScript fundamentals.
+Working with arrays and objects.
+Understanding DOM manipulation.
+Handling JavaScript events.
+Implementing form validation.
+Saving and retrieving tasks using localStorage.
+Dynamically updating the task list.
+Connecting JavaScript functionality with the existing HTML and CSS.
+Learning
+
+## Through this Week 4 task, I learned how to:
+
+Write basic JavaScript programs.
+Use variables, conditions, loops, functions, arrays, and objects.
+Manipulate webpage elements using the DOM.
+Handle user interactions using events.
+Validate form input.
+Store data using localStorage.
+Retrieve and update stored data.
+Build an interactive browser-based application using Vanilla JavaScript.
+Project Structure
+aurex-web-internship-sumayya/
+│
+├── index.html
+│
+├── styles/
+│   ├── main.css
+│   └── animations.css
+│
+├── scripts/
+│   └── main.js
+│
+├── README.md
+│
+└── picture.jpg
+## Conclusion
+
+The Week 4 project demonstrates the use of JavaScript programming fundamentals, DOM manipulation, events, form validation, and localStorage. The Task Management Application provides the required task management functionality while allowing me to practice the JavaScript concepts covered during Week 4.

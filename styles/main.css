@@ -1,35 +1,214 @@
 /* ========================================
-   WEEK 3 - ADVANCED CSS
+   GENERAL SETTINGS
 ======================================== */
 
-/* CSS VARIABLES */
-
-:root {
-    --primary-color: #5b3a70;
-    --secondary-color: #9b6bb0;
-    --background-color: #f5f3f7;
-    --card-color: #ffffff;
-    --text-color: #333333;
-    --light-purple: #eadff0;
-    --border-radius: 12px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #faf8fb;
+
+    color: #444444;
+
+    line-height: 1.6;
+}
+
 
 
 /* ========================================
-   FLUID TYPOGRAPHY
+   HEADER
 ======================================== */
 
-header h1 {
-    font-size: clamp(28px, 5vw, 42px);
+header {
+    background-color: #6a1b9a;
+
+    color: white;
+
+    padding: 25px 8%;
+
+    text-align: center;
 }
+
+
+.header-content h1 {
+    font-size: clamp(28px, 5vw, 42px);
+
+    margin-bottom: 5px;
+}
+
+
+.header-content p {
+    font-size: 17px;
+
+    opacity: 0.9;
+}
+
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+nav {
+    margin-top: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    background-color: #9c27b0;
+}
+
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+main {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+section {
+    background-color: white;
+
+    padding: 35px;
+
+    margin-bottom: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+section:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
 
 section h2 {
-    font-size: clamp(23px, 3vw, 28px);
+    color: #6a1b9a;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    font-size: clamp(24px, 4vw, 32px);
 }
 
 
+.section-description {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+
 /* ========================================
-   ADVANCED CSS GRID
+   PROFILE SECTION
+======================================== */
+
+.profile-section {
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+
+.profile-image {
+    text-align: center;
+}
+
+
+.profile-image img {
+    width: 200px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #9c27b0;
+
+    transition: transform 0.3s ease;
+}
+
+
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+
+.profile-content h2 {
+    text-align: left;
+}
+
+
+
+/* ========================================
+   SKILLS
 ======================================== */
 
 .skill-container {
@@ -39,104 +218,462 @@ section h2 {
         repeat(auto-fit, minmax(180px, 1fr));
 
     gap: 20px;
+}
+
+
+.skill {
+    background-color: #f7f0fa;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    border: 1px solid #ead8ef;
+
+    transition: 0.3s;
+}
+
+
+.skill h3 {
+    color: #6a1b9a;
+
+    margin-bottom: 10px;
+}
+
+
+.skill:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 8px 18px rgba(106, 27, 154, 0.15);
+}
+
+
+
+/* ========================================
+   EDUCATION
+======================================== */
+
+.education-card {
+    background-color: #f7f0fa;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #6a1b9a;
+}
+
+
+.education-card h3 {
+    color: #6a1b9a;
+
+    margin-bottom: 10px;
+}
+
+
+
+/* ========================================
+   WEEK 4 TASK MANAGER
+======================================== */
+
+.task-section {
+    background-color: #ffffff;
+}
+
+
+#taskForm {
+    display: flex;
+
+    gap: 10px;
 
     margin-top: 20px;
 }
 
 
-/* ========================================
-   SKILL CARDS
-======================================== */
+#taskInput {
+    flex: 1;
 
-.skill {
-    background-color: var(--background-color);
-    color: var(--primary-color);
+    padding: 13px 15px;
 
-    padding: 25px 15px;
+    border: 1px solid #d0c5d4;
 
-    border: 1px solid #e2d8e8;
+    border-radius: 8px;
 
-    border-radius: var(--border-radius);
+    font-size: 16px;
 
-    text-align: center;
+    outline: none;
 
-    margin: 0;
-
-    min-width: 0;
+    transition: 0.3s;
 }
 
 
+#taskInput:focus {
+    border-color: #6a1b9a;
+
+    box-shadow:
+        0 0 0 3px rgba(106, 27, 154, 0.1);
+}
+
+
+button {
+    background-color: #6a1b9a;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #9c27b0;
+
+    transform: scale(1.05);
+}
+
+
+#errorMessage {
+    min-height: 25px;
+
+    margin-top: 8px;
+
+    color: #c62828;
+
+    font-size: 14px;
+}
+
+
+
 /* ========================================
-   FLEXBOX NAVIGATION
+   FILTER BUTTONS
 ======================================== */
 
-nav {
+.filters {
     display: flex;
 
     justify-content: center;
-    align-items: center;
+
+    gap: 10px;
+
+    margin: 20px 0;
 
     flex-wrap: wrap;
-
-    gap: 30px;
 }
 
 
+.filter-btn {
+    background-color: #ead8ef;
+
+    color: #6a1b9a;
+
+    padding: 8px 16px;
+}
+
+
+.filter-btn:hover {
+    background-color: #d8bde1;
+}
+
+
+.filter-btn.active {
+    background-color: #6a1b9a;
+
+    color: white;
+}
+
+
+
 /* ========================================
-   FORM LAYOUT
+   TASK LIST
 ======================================== */
 
-form {
+#taskList {
+    list-style: none;
+
+    padding: 0;
+
+    margin-top: 20px;
+}
+
+
+.task-item {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background-color: #f7f0fa;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ead8ef;
+
+    transition: 0.3s;
 }
 
-input,
-textarea {
-    width: 100%;
 
-    padding: 10px;
+.task-item:hover {
+    transform: translateY(-3px);
 
-    border: 1px solid #d8cde0;
-
-    border-radius: 6px;
-
-    font-family: Arial, sans-serif;
+    box-shadow:
+        0 5px 12px rgba(106, 27, 154, 0.1);
 }
 
-textarea {
-    min-height: 120px;
-    resize: vertical;
+
+.complete-checkbox {
+    width: 18px;
+
+    height: 18px;
+
+    cursor: pointer;
 }
+
+
+.task-text {
+    flex: 1;
+
+    word-break: break-word;
+}
+
+
+.completed .task-text {
+    text-decoration: line-through;
+
+    opacity: 0.55;
+}
+
+
+.task-actions {
+    display: flex;
+
+    gap: 6px;
+}
+
+
+.task-actions button {
+    padding: 7px 12px;
+
+    font-size: 13px;
+}
+
+
+.edit-btn {
+    background-color: #7b5e87;
+}
+
+
+.delete-btn {
+    background-color: #b23a48;
+}
+
+
+.edit-btn:hover {
+    background-color: #654b70;
+}
+
+
+.delete-btn:hover {
+    background-color: #922f3b;
+}
+
 
 
 /* ========================================
-   RESPONSIVE GRID
+   TASK COUNT
+======================================== */
+
+#taskCount {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #6a1b9a;
+
+    font-weight: bold;
+}
+
+
+
+/* ========================================
+   CONTACT FORM
+======================================== */
+
+#contactForm {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+#contactForm label {
+    font-weight: bold;
+
+    color: #6a1b9a;
+
+    margin-top: 8px;
+}
+
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d0c5d4;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #6a1b9a;
+
+    box-shadow:
+        0 0 0 3px rgba(106, 27, 154, 0.1);
+}
+
+
+#contactForm button {
+    width: fit-content;
+
+    margin-top: 10px;
+}
+
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    background-color: #6a1b9a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+
+/* ========================================
+   RESPONSIVE DESIGN
 ======================================== */
 
 @media (max-width: 768px) {
 
-    .skill-container {
-        grid-template-columns:
-            repeat(auto-fit, minmax(160px, 1fr));
+    .profile-section {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+
+    .profile-content h2 {
+        text-align: center;
+    }
+
+
+    nav ul {
+        gap: 10px;
+    }
+
+
+    section {
+        padding: 25px;
     }
 
 }
 
 
-/* ========================================
-   MOBILE
-======================================== */
-
 @media (max-width: 480px) {
 
-    .skill-container {
-        grid-template-columns: 1fr;
+    main {
+        width: 94%;
     }
 
-    header h1 {
-        font-size: clamp(26px, 8vw, 32px);
+
+    section {
+        padding: 20px;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    #taskForm {
+        flex-direction: column;
+    }
+
+
+    #taskForm button {
+        width: 100%;
+    }
+
+
+    .task-item {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .task-text {
+        width: calc(100% - 40px);
+    }
+
+
+    .task-actions {
+        width: 100%;
+
+        justify-content: flex-end;
+    }
+
+
+    .profile-image img {
+        width: 160px;
+
+        height: 160px;
     }
 
 }
