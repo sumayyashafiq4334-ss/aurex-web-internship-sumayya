@@ -10,7 +10,6 @@ Sumayya Shafiq
 ## Live Deployment :
 https://sumayyashafiq4334-ss.github.io/aurex-web-internship-sumayya/
 
-
 ## Task description :
 Week 1 I to learned HTML5 and GitHub commands and practiced it.
 Week 2 task was to apply CSS to the page  and make it a responsive webpage.
@@ -46,7 +45,6 @@ Remove stored tasks
 Responsive interface for different screen sizes
 JavaScript Concepts Practiced
 Variables
-
 
 
 ## The following JavaScript fundamentals were practiced during Week 4:
@@ -100,7 +98,8 @@ Validate form input.
 Store data using localStorage.
 Retrieve and update stored data.
 Build an interactive browser-based application using Vanilla JavaScript.
-Project Structure
+
+## Project Structure
 aurex-web-internship-sumayya/
 │
 ├── index.html
@@ -115,6 +114,6 @@ aurex-web-internship-sumayya/
 ├── README.md
 │
 └── picture.jpg
-## Conclusion
 
+## Conclusion
 The Week 4 project demonstrates the use of JavaScript programming fundamentals, DOM manipulation, events, form validation, and localStorage. The Task Management Application provides the required task management functionality while allowing me to practice the JavaScript concepts covered during Week 4.
