@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager - Sumayya Shafiq</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ==============================
+         HEADER
+    =============================== -->
+
+    <header>
+
+        <h1>Task Manager</h1>
+
+        <p>
+            JavaScript Task Management Application
+        </p>
+
+    </header>
+
+
+    <!-- ==============================
+         MAIN CONTENT
+    =============================== -->
+
+    <main>
+
+        <section class="task-section">
+
+            <h2>My Tasks</h2>
+
+            <p class="section-description">
+                Add, edit, delete, complete and filter
+                your tasks.
+            </p>
+
+
+            <!-- ==============================
+                 TASK FORM
+            =============================== -->
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a task..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="submit"
+                    id="submitBtn">
+
+                    Add Task
+
+                </button>
+
+            </form>
+
+
+            <!-- Validation Message -->
+
+            <p id="errorMessage"></p>
+
+
+            <!-- ==============================
+                 FILTER BUTTONS
+            =============================== -->
+
+            <div class="filters">
+
+                <button
+                    type="button"
+                    class="filter-btn active"
+                    data-filter="all">
+
+                    All
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="active">
+
+                    Active
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="completed">
+
+                    Completed
+
+                </button>
+
+            </div>
+
+
+            <!-- ==============================
+                 TASK LIST
+            =============================== -->
+
+            <ul id="taskList"></ul>
+
+
+            <!-- ==============================
+                 TASK COUNTER
+            =============================== -->
+
+            <p id="taskCount">
+                0 task(s) remaining
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Sumayya Shafiq.
+        </p>
+
+    </footer>
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    =============================== -->
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
