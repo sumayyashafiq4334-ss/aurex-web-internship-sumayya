@@ -8,13 +8,7 @@ Sumayya Shafiq
 4
 
 ## Live Deployment :
-https://sumayyashafiq4334-ss.github.io/aurex-web-internship-sumayya/
-
-## Task description :
-Week 1 I to learned HTML5 and GitHub commands and practiced it.
-Week 2 task was to apply CSS to the page  and make it a responsive webpage.
-Week 3 task was to focus on Advanced CSS, CSS Grid, Flexbox, CSS Animations,responsive design, hover effects, and keyframe animations.
-
+https://sumayyashafiq4334-ss.github.io/aurex-web-internship-sumayya/task-manager/
 ## Technologies used : 
 - HTML5
 - CSS3
@@ -98,22 +92,6 @@ Validate form input.
 Store data using localStorage.
 Retrieve and update stored data.
 Build an interactive browser-based application using Vanilla JavaScript.
-
-## Project Structure
-aurex-web-internship-sumayya/
-│
-├── index.html
-│
-├── styles/
-│   ├── main.css
-│   └── animations.css
-│
-├── scripts/
-│   └── main.js
-│
-├── README.md
-│
-└── picture.jpg
 
 ## Conclusion
 The Week 4 project demonstrates the use of JavaScript programming fundamentals, DOM manipulation, events, form validation, and localStorage. The Task Management Application provides the required task management functionality while allowing me to practice the JavaScript concepts covered during Week 4.
