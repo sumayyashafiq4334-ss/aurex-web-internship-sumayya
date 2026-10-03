@@ -10,8 +10,7 @@ https://aurex-web-internship-sumayya.vercel.app/
 
 
 ## GitHub Repository :
-https://github.com/sumayyashafiq4334-ss/aurex-web-internship-sumayya.git
-
+https://github.com/sumayyashafiq4334-ss/aurex-web-internship-sumayya/tree/main/react-task-manager
 ## Project Overview
 
 The React Task Manager is a component-based task management web application developed as part of the AUREX Month 2 - Week 1 internship task.
