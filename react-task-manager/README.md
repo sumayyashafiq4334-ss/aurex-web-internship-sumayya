@@ -1,14 +1,16 @@
 # AUREX Month 2 - Week 1 React Task Manager
+
 ## Name : 
 Sumayya Shafiq
 ## Domain :
  Front-end Web development
 
-## Live Deployment
+## Live Deployment :
+https://aurex-web-internship-sumayya.vercel.app/
 
 
-## GitHub Repository
-
+## GitHub Repository :
+https://github.com/sumayyashafiq4334-ss/aurex-web-internship-sumayya.git
 
 ## Project Overview
 
